@@ -5,9 +5,7 @@ message = prompt('Введите пожалуйста пароль');
 
 if (!message){
     console.log('Отменено пользователем');
-}
-
-if(message === ADMIN_PASSWORD){
+}else if(message === ADMIN_PASSWORD){
     console.log('Добро пожаловать!');
 }else{
     console.log('Доступ запрещен, неверный пароль!');

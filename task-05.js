@@ -30,9 +30,9 @@ switch(country){
         alert('В вашей стране доставка недоступна!');
 }
 
-if (price <= 0){
+if (!price){
     console.log('В вашей стране доставка недоступна!');
 }else{
-    console.log('Доставка в ${country} будет стоить ${price} кредитов');
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
 
 }
